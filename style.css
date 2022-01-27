@@ -1,0 +1,63 @@
+:root{
+    --cor-de-fundo-cinza: #f5f5f5;
+    --fonte-padrao:'Inter', sans-serif;
+    --cor-texto:#828282
+    
+
+}
+
+
+/*HEADER*/
+
+.cabecalho{
+
+    background-color: var(--cor-de-fundo-cinza);
+    font-family: var(--fonte-padrao);
+
+    display: flex;
+    justify-content: space-between;
+    
+
+
+}
+
+.container-titulo{
+
+    
+    width: 50%;
+    margin-left: 100px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 24px;
+
+}
+.container-nav{
+    
+    width: 50%;
+    margin: auto;
+ 
+}
+
+.menu-nav{
+    display: flex;
+
+    margin-right: 120px;
+    justify-content: center;
+        
+}
+.menu-geral{
+    margin: 10px;
+    font-size: 16px;
+    font-weight:400;
+    color: var(--cor-texto);
+}
+
+.menu-todos{
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color:#333333
+    
+
+
+}
