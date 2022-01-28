@@ -8,6 +8,13 @@
 
 }
 
+body{
+    font-family: var(--fonte-padrao);
+    height: 900px;
+    
+
+}
+
 
 /*HEADER*/
 
@@ -25,45 +32,41 @@
 .container-titulo{
     display: flex;
     align-items: center;
-    
-
-    
     width: 50%;
+        
+    
     margin-left: 50px;
     text-align: left;
-    
-    
-    
-
+  
 }
 
 .logo{
 
     font-size: 30px;
     font-weight: 700;
-    
-    
-
-
-
+  
 }
 .container-nav{
     
-    width: 50%;
+    
     margin: auto;
     display: flex;
     justify-content: flex-end;
-    margin-right: 30px;
+    margin-right: 20px;
+    
  
 }
 
 .menu-nav{
     display: flex;
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
+    text-align: left;
+    
 
     
-    justify-content: space-evenly;
+    justify-content: space-between;
+    
        
 }
 .menu-geral{
@@ -73,6 +76,11 @@
     color: var(--cor-texto);
     cursor: pointer;
 }
+.menu-geral:hover{
+    font-weight: 600;
+    color:#333333;
+    
+}
 
 .menu-todos{
     margin: 10px;
@@ -80,10 +88,7 @@
     font-weight: 600;
     color:#333333;
     cursor: pointer;
-
     
-    
-
 }
 
 
@@ -93,6 +98,8 @@
 
     display: flex;
     margin-left: 50px;
+    
+
 
 }
 
@@ -104,8 +111,10 @@
     align-content: flex-end;
     justify-content: space-between;
     align-items: center;
+
     width: 100%;
     max-width: 900px;
+    
     
 }
 
@@ -220,7 +229,7 @@
 .card-descricao{
     margin-top: 20px;
     margin-left: 20px;
-    text-align: left;
+    text-align: left
 
 }
 
@@ -255,8 +264,182 @@
 }
 .fas{
     color: black;
+    margin-right: 5px;
 }
 
+
+/*Carrinho de compras*/
+
+.container-compras{
+    
+    width: 100%;
+    max-width: 350px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top:30px
+}
+
+/*Button Pesquisa*/
+.input-pesquisa{
+    width: 100%;
+    max-width: 246px;
+    height: 50px;
+
+    color: var(--cor-texto);
+    background-color: var(--cor-de-fundo-cinza);
+    padding-left: 15px;
+
+    font-size: 14px;
+    font-weight: 400;  
+
+}
+
+.button-pesquisa{
+    width: 100%;
+    max-width: 96px;
+    height: 50px;
+
+    background-color: var(--cor-secondary);
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+/*Carrinho de compras*/
+
+.button-carrinho-compras{
+    width: 100%;
+    max-width: 346px;
+    height: 50px;
+    margin-top: 10px;
+
+    color: #ffffff;
+    background-color: var(--cor-secondary);
+    
+    font-size: 18px;
+    font-weight: 700;
+    
+    cursor: pointer;
+
+}
+.button-carrinho-compras:hover{
+    border: 1px solid var(--cor-de-fundo-cinza);
+    
+
+}
+
+.container-produtos-carrinho{
+    width: 100%;
+    max-width: 346px;
+    height: 344px;
+    background-color: var(--cor-de-fundo-cinza);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.descricao-produto-dentro-carrinho{
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #333333;
+
+}
+
+.descricao-adicionar-itens{
+    font-size: 14px;
+    font-weight: 400;
+
+    color: var(--cor-texto);
+
+    margin-top: 10px;
+    cursor: pointer;
+
+
+}
+
+.descricao-adicionar-itens:hover{
+
+    color: #333333;
+    
+   
+
+}
+
+/*media para telas grandes*/
+
+@media (min-width: 1600px)
+{       .container-main{
+
+            margin-left: 350px;
+
+
+        }
+        .container-titulo{
+            margin-left: 350px;
+
+
+
+        }
+        .container-nav{
+
+            margin-right: 300px;
+    
+            
+         
+        }
+
+
+}
+@media (max-width: 600px)
+{       .container-main {
+    display: flex;    
+    flex-wrap: wrap;
+}
+    .container-compras {
+    
+    margin-left: 0;
+    max-width: 296px;
+    
+}
+.cabecalho {
+    margin: auto;
+    text-align: center;
+    
+    flex-wrap: wrap;
+    height: 150px;
+}
+.menu-nav {
+    margin: auto;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+    
+}
+
+.container-titulo {
+    text-align: center;
+    justify-content: center;  
+    
+    width: 100%;
+    margin-bottom: 10px;
+    
+    
+}
+
+
+}
+
+
+
+    
 
 
 
