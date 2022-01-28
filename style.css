@@ -1,7 +1,9 @@
 :root{
     --cor-de-fundo-cinza: #f5f5f5;
     --fonte-padrao:'Inter', sans-serif;
-    --cor-texto:#828282
+    --cor-texto:#828282;
+    --cor-primary:#2E245E;
+    --cor-secondary:#6B54DE
     
 
 }
@@ -10,25 +12,39 @@
 /*HEADER*/
 
 .cabecalho{
+    width: 100%;
+    height: 60px;
 
     background-color: var(--cor-de-fundo-cinza);
     font-family: var(--fonte-padrao);
 
     display: flex;
     justify-content: space-between;
-    
-
-
 }
 
 .container-titulo{
+    display: flex;
+    align-items: center;
+    
 
     
     width: 50%;
     margin-left: 50px;
     text-align: left;
+    
+    
+    
+
+}
+
+.logo{
+
     font-size: 30px;
-    line-height: 24px;
+    font-weight: 700;
+    
+    
+
+
 
 }
 .container-nav{
@@ -37,7 +53,7 @@
     margin: auto;
     display: flex;
     justify-content: flex-end;
-    margin-right: 100px;
+    margin-right: 30px;
  
 }
 
@@ -55,13 +71,17 @@
     font-size: 16px;
     font-weight:400;
     color: var(--cor-texto);
+    cursor: pointer;
 }
 
 .menu-todos{
     margin: 10px;
     font-size: 16px;
     font-weight: 600;
-    color:#333333
+    color:#333333;
+    cursor: pointer;
+
+    
     
 
 }
@@ -93,23 +113,153 @@
     
     width: 296px;
     height: 380px;
+    margin-top: 30px;
+    border: 3px solid var(--cor-de-fundo-cinza);
 
+    display: flex;
+    flex-direction: column;
+    
+
+
+
+
+}
+.container-geral-produtos:hover{
+    
+    border: 2px solid var(--cor-primary);
 
 }
 .container-img-produtos{
     background-color: var(--cor-de-fundo-cinza);
-
-
-
-}
-
-.container-img-produtos figure img{
     width: 100%;
     max-width: 296px;
     height: 154px;
+    text-align: center;
+
 
 
 }
+
+
+
+
+
+
+/*IMG*/
+
+.Lightweight-Jacket{
+    width: 100%;
+    max-width: 191.81px;
+    height: 140px;
+    object-fit: cover;
+}
+.Black-halt{
+    width: 100%;
+    max-width: 222px;
+    height: 140px;
+    object-fit: cover;
+}
+.mask{
+    width: 100%;
+    max-width: 170px;
+    height: 131px;
+    object-fit: cover;
+
+}
+.t-shirt{
+    width: 100%;
+    max-width: 191px;
+    height: 155.63px;
+    object-fit: cover;
+
+}
+.Short-Sleeve{
+    width: 100%;
+    max-width: 266px;
+    height: 150px;
+    object-fit: cover;
+    object-position: 0px 0px 0px 50px; /* try 20% 10% */ 
+
+}
+.Champion-Packable-Jacket{
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    object-fit: cover;
+    object-position: 0px 0px 0px 50px;
+    
+}
+
+/*BUTTON CARDS*/
+
+.button-itens{
+    margin-top: 20px;
+    margin-left: 20px;    
+    width: 100%;
+    max-width: 73px;
+    height: 26px;
+
+    background-color: var(--cor-primary);
+    color: #f5f5f5;
+
+    cursor: pointer;
+
+    font-size: 12px;
+    font-weight: 400
+
+}
+
+/*Descricao Cards*/
+
+.titulo-itens{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.card-descricao{
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: left;
+
+}
+
+.descricao-produto{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--cor-texto);
+
+}
+
+.valor-produto{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--cor-primary);
+
+    margin-top: 20px;
+
+}
+
+.link-add-produto{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--cor-texto);
+
+    margin-top: 20px;
+    text-decoration: underline;
+
+}
+.link-add-produto:hover{
+    color: var(--cor-secondary);
+
+}
+.fas{
+    color: black;
+}
+
+
 
 
 
